@@ -7,6 +7,6 @@ public class Gold extends Assinatura{
 
     @Override
     public float calcularAssinatura() {
-        return this.custoBase * (1 - this.cliente.percentDesconto());
+        return this.custoBase * (1 - this.cliente.percentDesconto()*1.05f);
     }
 }
